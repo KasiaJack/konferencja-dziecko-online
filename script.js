@@ -120,3 +120,4 @@ showPage("home");
       msg.style.color = "green";
       form.reset();
   });
+  
