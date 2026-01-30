@@ -194,10 +194,11 @@ nav a:hover, nav a:focus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   align-items: center;
-  gap: 32px;
+  gap: 60px;
 
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .org-logos-grid img {
@@ -210,18 +211,13 @@ nav a:hover, nav a:focus {
   margin: 0 auto;
   display: block;
 
-  filter: grayscale(100%) contrast(1.1);
-  opacity: 0.85;
+  filter: none;
+  opacity: 1;
 
-  transition: 
-    filter .25s ease,
-    opacity .25s ease,
-    transform .25s ease;
+  transition: transform .25s ease;
 }
 
 .org-logos-grid img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
   transform: scale(1.04);
 }
 
@@ -246,12 +242,11 @@ nav a:hover, nav a:focus {
 .eyebrow { 
   font-family: var(--font-heading);
   text-transform: uppercase; 
-  letter-spacing: 0.14em; 
-  font-size: 14px; 
-  font-weight: 600;
+  font-size: clamp(30px, 4.5vw, 48px);
+  letter-spacing: 0.16em;
+  font-weight: 700;
   color: var(--brand-2); 
-  margin-bottom: 12px; 
-  margin-top: 45px;
+  margin: 40px 0 14px;
 }
 
 h1 { 
@@ -301,16 +296,38 @@ main.container::before {
     var(--border),
     transparent
   );
-  margin-bottom: 80px;
+  margin-bottom: 10px;
 }
 
 .lead {
   color: var(--muted); 
   max-width: 80ch; 
-  font-size: clamp(16px,2.4vw,18px); 
+  font-size: clamp(22px,2.4vw,18px); 
   margin: 0 auto; text-align: center; 
+  margin-top: 20px;
+  margin-bottom: 20px;
 } 
-  
+
+.hero-meta {
+  margin-top: 24px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.hero-meta::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 160px;
+  margin: 0 auto 20px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border),
+    transparent
+  );
+}
+
 section { 
   padding: 40px 0; 
 } 
@@ -382,7 +399,7 @@ section > h2::after {
 }
 
 .about-content p {
-  font-size: 15.5px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--muted);
   margin: 0;
@@ -642,7 +659,7 @@ section > h2::after {
 
 
 section[aria-label="Wideo promocyjne"] { 
-  margin-top: 100px; 
+  margin-top: 80px; 
   text-align: center; 
   margin-bottom: auto; 
 } 
@@ -927,7 +944,9 @@ section.card {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin: 16px 0 32px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0;
   flex-wrap: wrap;
 }
 
@@ -1153,6 +1172,58 @@ section.card {
     var(--border),
     transparent
   );
+}
+
+/*patron na dole strony*/ 
+
+.patrons-strip {
+  padding: 48px 0 32px;
+  margin-top: 80px;
+
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255,255,255,.03)
+  );
+
+  border-top: 1px solid var(--border);
+}
+
+.patrons-label {
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+.patrons-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  align-items: center;
+
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.patrons-logos img {
+  max-height: 70px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+
+  opacity: 0.85;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.patrons-logos img:hover {
+  opacity: 1;
+  transform: scale(1.04);
 }
 
 .site-footer {
