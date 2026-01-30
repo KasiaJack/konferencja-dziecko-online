@@ -944,8 +944,7 @@ section.card {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 0;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -980,8 +979,8 @@ section.card {
 
 .countdown-section {
   text-align: center;
-  padding: 24px 0 8px;
-  margin-top: 40px;
+  padding: 0;
+  margin-top: 80px;
 }
 
 .countdown-section h2 {
@@ -989,7 +988,7 @@ section.card {
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--muted);
-  margin-bottom: 18px;
+  margin-bottom: 32px;
 }
 
 .countdown-section h2::after {
