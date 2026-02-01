@@ -1535,3 +1535,39 @@ body.dark .about-summary p {
     max-height: 48px;
   }
 }
+
+@media (max-width: 860px) {
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-media {
+    order: 1;
+  }
+
+  .about-content {
+    order: 2;
+  }
+
+}
+
+@media (max-width: 860px) {
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+}
+
+@media (max-width: 860px) {
+
+  .about-image {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+}
