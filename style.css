@@ -1591,3 +1591,10 @@ body.dark .about-summary p {
   }
 
 }
+
+@media (max-width: 560px) {
+  .hero-meta {
+    margin-top: 24px;
+    padding-top: 12px;
+  }
+}
