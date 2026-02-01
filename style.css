@@ -1606,8 +1606,3 @@ body.dark .about-summary p {
   }
 }
 
-@media (max-width: 560px) {
-  main > section:first-child {
-    margin-top: 12px;
-  }
-}
