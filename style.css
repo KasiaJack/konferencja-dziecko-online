@@ -1517,3 +1517,21 @@ body.dark .about-summary p {
     gap: 8px;
   }
 }
+
+@media (max-width: 560px) {
+  .org-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .org-logos-grid img:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .org-logos-grid img {
+    max-height: 48px;
+  }
+}
