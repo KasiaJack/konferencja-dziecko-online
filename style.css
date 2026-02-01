@@ -1497,6 +1497,25 @@ body.dark .about-summary p {
 }
 
 @media (max-width: 899px) {
+  header .container.nav {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 899px) {
+  .logo {
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 899px) {
+  .nav-actions {
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 899px) {
   .nav {
     padding: 6px 0;
   }
@@ -1549,6 +1568,7 @@ body.dark .about-summary p {
 
   .about-content {
     order: 2;
+    text-align: justify;
   }
 
 }
