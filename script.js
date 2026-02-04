@@ -96,28 +96,35 @@ navLinks.forEach(link => {
 // strona startowa
 showPage("home");
 
-//Walidacja formularza 
+// Formularz 
 
+const form = document.querySelector("form");
+const msg = document.getElementById("form-msg");
 
-  const form = document.querySelector("form");
-  const msg = document.getElementById("form-msg");
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
 
-  form.addEventListener("submit", function (e) { e.preventDefault(); 
+  const formData = new FormData(form);
 
-    const imie = form.imie.value.trim();
-    const email = form.email.value.trim();
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        "Accept": "application/json"
+      }
+    });
 
-    if (imie === "" || email === "") {
-      msg.textContent = "Uzupełnij imię i email!";
-      msg.style.color = "red";
-    } 
-    if (!email.includes("@")) {
-  msg.textContent = "Podaj poprawny adres email!";
-  msg.style.color = "red";
-  return;
-    }
+    if (response.ok) {
       msg.textContent = "Rejestracja przebiegła pomyślnie ✅";
       msg.style.color = "green";
       form.reset();
-  });
-  
+    } else {
+      msg.textContent = "Coś poszło nie tak. Spróbuj ponownie.";
+      msg.style.color = "red";
+    }
+  } catch (error) {
+    msg.textContent = "Błąd sieci. Spróbuj później.";
+    msg.style.color = "red";
+  }
+});
