@@ -1186,6 +1186,11 @@ section.card {
   );
 }
 
+#faq .org-inline { 
+  margin-top: -110px; 
+  margin-bottom: 150px; }
+
+
 /*patron na dole strony*/ 
 
 .patrons-strip {
