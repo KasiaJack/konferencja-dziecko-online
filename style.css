@@ -1117,6 +1117,16 @@ section.card {
     transform .15s ease;
 }
 
+.faq details a {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.faq details a:hover {
+  color: var(--brand-2);
+}
+
 .faq details:hover {
   border-color: rgba(124,156,255,.35);
   box-shadow: 0 6px 20px rgba(0,0,0,.25);
