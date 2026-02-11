@@ -22,7 +22,7 @@
 <header>
   <div class="container nav">
           
-    <a href="#top" class="logo" aria-label="Strona główna">
+    <a href="#" class="logo" data-target="home" aria-label="Strona główna">
     <img src="logo4.png" alt="Logo konferencji">
     </a>
 
@@ -42,7 +42,8 @@
       <span></span>
    </button>
 
-  <button id="theme-toggle" class="theme-toggle" aria-label="Zmień tryb">
+  
+   <button id="theme-toggle" class="theme-toggle" aria-label="Zmień tryb">
     <span class="icon sun">☀️</span>
     <span class="icon moon">🌙</span>
   </button>
@@ -219,7 +220,7 @@
 
 <section id="patronat-honorowy" class="page-section" data-page="home">
 
-  <h2 class="section-title">Patronat honorowy</h2>
+  <h2 class="section-title">Patronat Honorowy</h2>
 
    <div class="patrons-logos">
     <img src="Ministerstwo1.png" alt="Narodowy Fundusz Zdrowia">
@@ -266,10 +267,10 @@
   <!-- BLOK I -->
 
   <article class="agenda-item">
-      <time class="agenda-time">9:30</time>
+      <time class="agenda-time">09:30</time>
         <div class="agenda-card">
           <h3>Ochrona dzieci w sieci jako zadanie państwa – aktualne regulacje i kierunki zmian</h3>
-          <p>Poseł Maja Nowak</p>
+          <p>Posełanka Maja Nowak</p>
         </div>
     </article>
 
@@ -352,7 +353,7 @@
       <time class="agenda-time">13:15</time>
         <div class="agenda-card">
           <h3>Dziecko w Sieci – neurobiologiczne konsekwencje świata cyfrowego dla rozwoju i bezpieczeństwa dziecka</h3>
-          <p>dr n. med. Zakowicz</p>
+          <p>dr n. med. Przemysław Zakowicz</p>
         </div>
     </article>
 
@@ -431,9 +432,9 @@
     </article>
     
     <article class="speaker-card">
-      <img src="antosz.jpg" alt="Zdjęcie prelegenta: Dariusz Mazurkiewicz" />
+      <img src="ksiadz.png" alt="Zdjęcie prelegenta: Dariusz Mazurkiewicz" />
       <h3>ks. dr Dariusz Mazurkiewicz</h3>
-      <p>Wykładowca prawa kanonicznego, seminarium diecezji Zielonogórkso-Gorzowskiej oraz pracownik w wydziale teologicznym</p>
+      <p>Wykładowca prawa kanonicznego oraz pracownik w wydziale teologicznym</p>
     </article>
 
     <article class="speaker-card">
@@ -455,9 +456,9 @@
     </article>
 
     <article class="speaker-card">
-      <img src="jedrzejko.png" alt="Zdjęcie prelegenta: Agnieszka Taper" />
+      <img src="taper.jpg" alt="Zdjęcie prelegenta: Agnieszka Taper" />
       <h3>Agnieszka Taper</h3>
-      <p>Socjolożka, Edukatorka medialna fundacji Bonum Humanum, dyrektorka Biura Centrum Profilaktyki Społecznej</p>
+      <p>Socjolożka, Edukatorka medialna fundacji Bonum Humanum</p>
     </article>
 
    </div>
@@ -468,7 +469,7 @@
 
 <section id="patronat-honorowy" class="page-section" data-page="program">
 
-  <h2 class="section-title">Patronat honorowy</h2>
+  <h2 class="section-title">Patronat Honorowy</h2>
 
    <div class="patrons-logos">
     <img src="Ministerstwo1.png" alt="Narodowy Fundusz Zdrowia">
@@ -492,7 +493,7 @@
   </div>
 
 
-  <h2>Patronat</h2>
+  <h2>Patronat Honorowy</h2>
 
     <div class="logos">
 
@@ -526,7 +527,7 @@
 
 <!-- =================== Rejestracja =================== -->
 
-<section id="rejestracja" class="page-section grid-2 registration" data-page="rejestracja">
+<section id="rejestracja" class="page-section registration" data-page="rejestracja">
 
 <div class="org-inline">
     <div class="org-logos-grid">
@@ -536,41 +537,26 @@
     </div>
   </div>
 
-      <form 
-          class="card"
-          action="https://formspree.io/f/xnjbaqdb"
-          method="POST"
-          aria-label="Formularz rejestracyjny"
-        >
+    <div class="card google-form-wrapper">
 
-        <h2>Formularz rejestracyjny</h2>
+  <h2>Formularz rejestracyjny</h2>
 
-        <label>
-            Imię
-            <input type="text" name="name" placeholder="Twoje imię" required>
-        </label>
+  
 
-        <label>
-            Email
-            <input type="email" name="email" placeholder="twoj@email.pl" required>
-        </label>
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSehnNV6Xm91MXtlQsCYZL5ykGOJxfTKgh2IzNV-SFl_Ew3nFg/viewform?usp=publish-editor"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+    Ładowanie…
+  </iframe>
 
-        <label>
-            Wiadomość
-            <textarea name="message" rows="4" placeholder="Twoja wiadomość (opcjonalnie)"></textarea>
-        </label>
-
-        <button type="submit">Zapisz się</button>
-
-        <p id="form-msg"></p>
-
-      </form>
+</div>
 
   </section>
 
   <section id="patronat-honorowy" class="page-section" data-page="rejestracja">
 
-  <h2 class="section-title">Patronat honorowy</h2>
+  <h2 class="section-title">Patronat Honorowy</h2>
 
   <div class="patrons-logos">
     <img src="Ministerstwo1.png" alt="Narodowy Fundusz Zdrowia">
@@ -606,9 +592,11 @@
     <details>
  
       <summary>Czy konferencja będzie nagrywana?</summary>
-      <p>Tak. Wystąpienia prelegentów będą nagrywane. Nagrania udostępnimy uczestnikom po wydarzeniu oraz będą dostępne na naszym kanale na <a href="https://www.youtube.com/@CWTUW"></a> Youtube oraz na stronie internetowej CWTUW <a href="https://cwtuw.pl/". /a>
-        Nagrania będą realizowane z poszanowaniem prywatności uczestników – nie przewidujemy rejestrowania wizerunku 
-        ani wypowiedzi osób z publiczności bez ich wyraźnej zgody.</p>
+      <p>Tak. Wystąpienia prelegentów będą nagrywane. Nagrania udostępnimy uczestnikom po wydarzeniu oraz będą dostępne na naszym kanale na <a href="https://www.youtube.com/@CWTUW" target="_blank" rel="noopener">
+      YouTube </a> oraz na stronie internetowej <a href="https://cwtuw.pl/" target="_blank" rel="noopener"> CWTUW </a>.
+      Nagrania będą realizowane z poszanowaniem prywatności uczestników – nie przewidujemy rejestrowania wizerunku 
+      ani wypowiedzi osób z publiczności bez ich wyraźnej zgody.
+      </p>
  
     </details>
  
@@ -640,39 +628,10 @@
 
 </section>  
 
-<section id="info-panel" class="page-section section-soft" data-page="faq">
-
-  <h2>Informacje dodatkowe</h2>
-
-  <p class="info-lead">Polecane wydarzenia i materiały:</p>
-
-  <div class="info-links">
-    <a href="https://cwtuw.pl/" target="_blank">
-      <span class="icon">📘</span>
-      Na wspólnej drodze pomocy psychologicznej
-    </a>
-
-    <a href="https://www.facebook.com/profile.php?id=61579301904367" target="_blank">
-      <span class="icon">💬</span>
-      Fundacja Feniks - działana na rzecz zdrowia psychicznego. 
-    </a>
-
-    <a href="https://116111.pl/" target="_blank">
-      <span class="icon">🧠</span>
-      Pomoc w kryzysie psychicznym
-    </a>
-
-  </div>
-
-  <blockquote class="info-quote">
-    „Dobro dziecka to odpowiedzialność nas wszystkich.”
-  </blockquote>
- 
-</section>
 
 <section id="patronat-honorowy" class="page-section" data-page="faq">
 
-  <h2 class="section-title">Patronat honorowy</h2>
+  <h2 class="section-title">Patronat Honorowy</h2>
 
   <div class="patrons-logos">
     <img src="Ministerstwo1.png" alt="Narodowy Fundusz Zdrowia">
@@ -712,12 +671,17 @@
       <ul>
         <li>
           <a href="https://www.facebook.com/uzaleznieniamiedzychod" target="_blank" rel="noopener" aria-label="Facebook">
-            Facebook
+            Facebook - CWTUW
           </a>
         </li>
         <li>
           <a href="https://cwtuw.pl/" target="_blank" rel="noopener" aria-label="Strona CWTUW">
             CWTUW
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61579301904367" target="_blank" rel="noopener" aria-label="Facebook">
+            Facebook - FENIKS
           </a>
         </li>
       </ul>
