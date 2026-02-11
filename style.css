@@ -224,11 +224,11 @@ nav a:hover, nav a:focus {
 /* Naglówek */ 
 
 .hero{ 
-  padding:34px 0 54px; 
+  padding:34px 0 80px; 
   position: relative; 
   overflow: hidden; 
   text-align: center; 
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 } 
 
 .hero:before{ 
@@ -284,19 +284,7 @@ h1 {
   background: linear-gradient(90deg,var(--brand),var(--accent)) 
 } 
 
-main.container::before {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--border),
-    transparent
-  );
-  margin-bottom: 10px;
-}
+
 
 .lead {
   color: var(--muted); 
@@ -308,7 +296,7 @@ main.container::before {
 } 
 
 .hero-meta {
-  margin-top: 90px;
+  margin-top: 60px;
   padding-top: 20px;
   position: relative;
 }
@@ -318,7 +306,24 @@ main.container::before {
   display: block;
   height: 1px;
   width: 160px;
-  margin: 0 auto 20px;
+  margin: 0 auto 70px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border),
+    transparent
+  );
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1100px;
+  height: 1px;
   background: linear-gradient(
     to right,
     transparent,
@@ -686,54 +691,9 @@ aside a {
   text-align: center; 
 }
 
-form { 
-  display: grid; 
-  gap: 12px; 
-}
 
-form label {
-  display: grid;
-  gap: 6px;
-  font-weight: 600;
-}
 
-input, textarea {
-  background: rgba(255,255,255,.04);
-  backdrop-filter: blur(6px);
-  color: var(--text);
-  border: 1px solid rgba(255,255,255,.15);
-  padding: 12px 14px;
-  border-radius: 14px;
 
-  transition:
-    border-color .25s ease,
-    box-shadow .25s ease,
-    transform .15s ease;
-}
-
-input:focus, textarea:focus {
-  outline: none;
-  border-color: var(--brand);
-  box-shadow: 0 0 0 4px rgba(124,156,255,.18);
-  transform: translateY(-1px);
-}
-
-button { 
-  width: auto; 
-  justify-self: center; 
-  background: linear-gradient(135deg, var(--brand), #5f7cff); 
-  color: #0f1115; 
-  border: 0; 
-  padding: 12px 28px; 
-  border-radius: 999px; 
-  font-weight: 700; 
-  cursor: pointer; 
-  margin-top: 15px; 
-} 
-
-button:hover { 
-  filter: brightness(1.05); 
-} 
 
 footer { 
   border-top: 1px solid var(--border); 
@@ -769,9 +729,25 @@ footer {
   object-fit: contain; 
 }
 
+/*formularz*/
+
 #rejestracja .org-inline {
   margin-top: -110px;
   margin-bottom: 150px;
+}
+
+.google-form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.google-form-wrapper iframe {
+  width: 100%;
+  min-height: 1600px;
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
 }
 
 .theme-toggle { 
@@ -1023,14 +999,7 @@ section.card {
   overflow: hidden;
 }
 
-.registration form.card {
-  border: 1px solid rgba(124,156,255,.35);
-  box-shadow:
-    0 0 0 1px rgba(124,156,255,.15),
-    0 10px 30px rgba(0,0,0,.35);
-    max-width: 700px;
-    margin: 0 auto;
-}
+
 
 .registration {
   align-items: stretch;
@@ -1409,13 +1378,6 @@ body.dark .faq details {
 body.dark .info-links a {
   background: #dde1ea;
   border: 1px solid var(--border);
-}
-
-body.dark .registration form.card {
-  border: 1px solid rgba(124,156,255,.35);
-  box-shadow:
-    0 0 0 1px rgba(124,156,255,.18),
-    0 10px 30px rgba(15,23,42,.25);
 }
 
 body.dark header { 
