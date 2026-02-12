@@ -58,7 +58,7 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 const pages = document.querySelectorAll(".page-section");
-const navLinks = document.querySelectorAll("nav a[data-target]");
+
 
 function showPage(pageName) {
   pages.forEach(section => {
@@ -69,9 +69,12 @@ function showPage(pageName) {
   });
 }
 
-navLinks.forEach(link => {
+const allLinks = document.querySelectorAll('[data-target]');
+
+allLinks.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
+
     const target = link.dataset.target;
 
     if (target === "kontakt") {
@@ -81,7 +84,6 @@ navLinks.forEach(link => {
           .getElementById("kontakt")
           .scrollIntoView({ behavior: "smooth" });
       }, 100);
-
     } else {
       showPage(target);
       window.scrollTo({
@@ -89,6 +91,7 @@ navLinks.forEach(link => {
         behavior: "smooth"
       });
     }
+
     document.body.classList.remove("menu-open");
   });
 });
