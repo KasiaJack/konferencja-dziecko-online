@@ -718,7 +718,7 @@ footer {
 
 .google-form-wrapper {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 0 0 120px;
   padding: 32px;
 }
 
@@ -1122,6 +1122,8 @@ section.card {
   );
 }
 
+
+
 #faq {
   margin-bottom: 24px;
   position: relative;
@@ -1200,21 +1202,25 @@ section.card {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 80px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 10px;
 
   max-width: 1100px;
   margin: 0 auto;
 
-  padding: 0 80px;
+  padding: 0 40px;
   align-items: start;
 }
 
+.footer-title {
+  grid-column: 1 / -1;
+  text-align: center;
 
-
-.footer-col:last-child {
-  padding-top: 42px;
+  font-size: 22px;
+  margin: 0 0 8px 0;
 }
+
 
 .footer-col h3 {
   font-size: 20px;
