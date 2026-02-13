@@ -1538,12 +1538,12 @@ body.dark .about-summary p {
   
   #agenda .org-inline {
     margin-top: 40px !important;
-    margin-bottom: 100px !important;
+    margin-bottom: 150px !important;
   }
 
   #patronaci .org-inline {
-    margin-top: -10px !important;
-    margin-bottom: 60px !important;
+    margin-top: -50px !important;
+    margin-bottom: 150px !important;
   }
 
   #rejestracja .org-inline {
