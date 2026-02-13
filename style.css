@@ -1547,12 +1547,12 @@ body.dark .about-summary p {
   }
 
   #rejestracja .org-inline {
-    margin-top: 10px !important;
+    margin-top: ß50px !important;
     margin-bottom: 150px !important;
   }
 
   #faq .org-inline {
-    margin-top: 10px !important;
+    margin-top: -50px !important;
     margin-bottom: 150px !important;
   }
 
