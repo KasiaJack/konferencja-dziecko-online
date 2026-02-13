@@ -1448,13 +1448,7 @@ body.dark .about-summary p {
 
 /*telefon*/
 
-@media (max-width: 768px) {
-
-  main > section {
-    margin-top: 40px !important;
-  }
-
-  
+@media (max-width: 768px) { 
   
   #agenda .org-inline {
     margin-top: 500px !important;
