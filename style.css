@@ -1537,23 +1537,23 @@ body.dark .about-summary p {
 @media (max-width: 768px) { 
   
   #agenda .org-inline {
-    margin-top: 20px !important;
+    margin-top: 40px !important;
     margin-bottom: 100px !important;
   }
 
   #patronaci .org-inline {
-    margin-top: 10px !important;
+    margin-top: -10px !important;
     margin-bottom: 60px !important;
   }
 
   #rejestracja .org-inline {
     margin-top: 10px !important;
-    margin-bottom: 60px !important;
+    margin-bottom: 150px !important;
   }
 
   #faq .org-inline {
     margin-top: 10px !important;
-    margin-bottom: 60px !important;
+    margin-bottom: 150px !important;
   }
 
 }
