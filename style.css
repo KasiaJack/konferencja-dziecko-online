@@ -1451,7 +1451,7 @@ body.dark .about-summary p {
 @media (max-width: 768px) { 
   
   #agenda .org-inline {
-    margin-top: 10px !important;
+    margin-top: 15px !important;
     margin-bottom: 20px !important;
   }
 
