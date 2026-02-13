@@ -1532,15 +1532,8 @@ body.dark .about-summary p {
 @media (max-width: 768px) {
 
   .org-inline {
-    margin-top: 16px !important;
-    margin-bottom: 32px !important;
-  }
-
-  #patronaci .org-inline,
-  #faq .org-inline,
-  #rejestracja .org-inline,
-  #agenda .org-inline {
-    margin-top: 16px !important;
+    margin-top: 20px ;
+    margin-bottom: 50px ;
   }
 
 }
