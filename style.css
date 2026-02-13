@@ -1454,12 +1454,26 @@ body.dark .about-summary p {
     margin-top: 40px !important;
   }
 
-  #agenda .org-inline,
-  #patronaci .org-inline,
-  #rejestracja .org-inline,
+  
+  
+  #agenda .org-inline {
+    margin-top: 500px !important;
+    margin-bottom: 500px !important;
+  }
+
+  #patronaci .org-inline {
+    margin-top: 500px !important;
+    margin-bottom: 500px !important;
+  }
+
+  #rejestracja .org-inline {
+    margin-top: 500px !important;
+    margin-bottom: 500px !important;
+  }
+
   #faq .org-inline {
-    margin-top: 0 !important;
-    margin-bottom: 50px !important;
+    margin-top: 500px !important;
+    margin-bottom: 500px !important;
   }
 
 }
