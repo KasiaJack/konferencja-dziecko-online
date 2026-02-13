@@ -1448,29 +1448,7 @@ body.dark .about-summary p {
 
 /*telefon*/
 
-@media (max-width: 768px) { 
-  
-  #agenda .org-inline {
-    margin-top: 20px !important;
-    margin-bottom: 40px !important;
-  }
 
-  #patronaci .org-inline {
-    margin-top: 5px !important;
-    margin-bottom: 40px !important;
-  }
-
-  #rejestracja .org-inline {
-    margin-top: -5px !important;
-    margin-bottom: 40px !important;
-  }
-
-  #faq .org-inline {
-    margin-top: 5px !important;
-    margin-bottom: 40px !important;
-  }
-
-}
 
 @media (max-width: 899px) {
   .container.nav {
@@ -1556,6 +1534,29 @@ body.dark .about-summary p {
 
 }
 
+@media (max-width: 768px) { 
+  
+  #agenda .org-inline {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+  }
+
+  #patronaci .org-inline {
+    margin-top: 5px !important;
+    margin-bottom: 40px !important;
+  }
+
+  #rejestracja .org-inline {
+    margin-top: -5px !important;
+    margin-bottom: 40px !important;
+  }
+
+  #faq .org-inline {
+    margin-top: 5px !important;
+    margin-bottom: 40px !important;
+  }
+
+}
 
 
 @media (max-width: 560px) {
@@ -1564,14 +1565,6 @@ body.dark .about-summary p {
   }
 }
 
-@media (max-width: 768px) {
-
-  .org-inline {
-    margin-top: 20px ;
-    margin-bottom: 50px ;
-  }
-
-}
 
 @media (max-width: 768px) {
 
