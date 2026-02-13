@@ -1448,6 +1448,22 @@ body.dark .about-summary p {
 
 /*telefon*/
 
+@media (max-width: 768px) {
+
+  main > section {
+    margin-top: 40px !important;
+  }
+
+  #agenda .org-inline,
+  #patronaci .org-inline,
+  #rejestracja .org-inline,
+  #faq .org-inline {
+    margin-top: 0 !important;
+    margin-bottom: 50px !important;
+  }
+
+}
+
 @media (max-width: 899px) {
   .container.nav {
     display: flex;
