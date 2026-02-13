@@ -1525,15 +1525,14 @@ body.dark .about-summary p {
 
 @media (max-width: 768px) {
 
-  #patronaci .org-inline,
-  #rejestracja .org-inline,
-  #faq .org-inline,
-  #agenda .org-inline {
-    margin-top: 10px !important;
-    margin-bottom: 60px !important;
+  .org-inline {
+    margin-top: 10px;
+    margin-bottom: 60px;
   }
 
 }
+
+
 
 @media (max-width: 560px) {
   .org-logos-grid img {
