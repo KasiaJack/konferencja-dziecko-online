@@ -1547,7 +1547,7 @@ body.dark .about-summary p {
   }
 
   #rejestracja .org-inline {
-    margin-top: ß50px !important;
+    margin-top: -50px !important;
     margin-bottom: 150px !important;
   }
 
@@ -1557,7 +1557,6 @@ body.dark .about-summary p {
   }
 
 }
-
 
 @media (max-width: 560px) {
   .org-logos-grid img {
