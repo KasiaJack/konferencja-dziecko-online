@@ -1523,6 +1523,18 @@ body.dark .about-summary p {
   }
 }
 
+@media (max-width: 768px) {
+
+  #patronaci .org-inline,
+  #rejestracja .org-inline,
+  #faq .org-inline,
+  #agenda .org-inline {
+    margin-top: 80px !important;
+    margin-bottom: 50px !important;
+  }
+
+}
+
 @media (max-width: 560px) {
   .org-logos-grid img {
     max-height: 48px;
