@@ -1704,13 +1704,17 @@ body.dark .about-summary p {
   }
 
   #patronaci .logos article {
-    height: auto;
+    height: 200px;
     padding: 28px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #patronaci .logos article img {
-    max-width: 85%;
-    max-height: 120px;
+    max-height: 80px;
+    max-width: 80%;
+    object-fit: contain;
   }
 }
 
