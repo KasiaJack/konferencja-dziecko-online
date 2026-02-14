@@ -1612,6 +1612,26 @@ body.dark .about-summary p {
 
 @media (max-width: 768px) {
 
+  #patronaci .logos article:nth-child(5) {
+    width: 92%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #patronaci .logos article:nth-child(3) {
+    order: 2;
+  }
+
+  #patronaci .logos article:nth-child(2) {
+    order: 3;
+  }
+
+}
+
+@media (max-width: 768px) {
+
   .google-form-wrapper {
     margin: 0 auto;
     padding: 20px 16px;
