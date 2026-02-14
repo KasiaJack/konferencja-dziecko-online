@@ -1712,37 +1712,30 @@ body.dark .about-summary p {
     max-width: 85%;
     max-height: 120px;
   }
-
-  #patronaci .logos article:nth-child(5) {
-    width: 100%;
-  }
-
 }
 
 @media (max-width: 768px) {
 
   .patrons-logos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
-    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 18px;
+    max-width: 360px;
+    margin: 30px auto 0;
+    align-items: center;
   }
 
   .patrons-logos img {
-    max-height: 48px;
+    max-height: 56px;
+    width: auto;
     margin: 0 auto;
+    display: block;
   }
 
-}
-
-@media (max-width: 420px) {
-
-  .patrons-logos {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .patrons-logos img {
-    max-height: 44px;
+  .patrons-logos img:nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-height: 64px;
   }
 
 }
