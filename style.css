@@ -1613,9 +1613,9 @@ body.dark .about-summary p {
 @media (max-width: 768px) {
 
   #patronaci .logos article:nth-child(5) {
-    max-height: 110px;
-    max-width: 90%;
+    width: 92%;
     object-fit: contain;
+    margin: 0 auto;
   }
 
 }
