@@ -22,27 +22,12 @@ body {
   color: var(--text);
   line-height: 1.65;
   position: relative;
+
+  background: 
+    linear-gradient(rgba(10,14,24,0.75), rgba(10,14,24,0.75)),
+    url("tlo1.png") center / cover no-repeat fixed;
 }
 
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("tlo1.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -2;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(10,14,24,0.75);
-  z-index: -1;
-}
 
 .container { 
   max-width: 1100px; 
