@@ -1570,29 +1570,42 @@ body.dark .about-summary p {
   }
 }
 
-@media (max-width: 768px) {
 
-  #patronaci .logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  #patronaci .logos article {
-    width: 90%;
-    max-width: 420px;
-    border-radius: 20px;
-    padding: 26px 20px;
-  }
-
-}
 
 @media (max-width: 768px) {
 
   section[data-page="home"]#patronat-honorowy {
     padding-bottom: 10px;
     margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #patronaci .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  #patronaci .logos article {
+    width: 92%;
+    max-width: 380px;
+    height: 170px;
+    padding: 16px;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #patronaci .logos article img {
+    max-height: 110px;
+    max-width: 90%;
+    object-fit: contain;
   }
 
 }
@@ -1695,25 +1708,6 @@ body.dark .about-summary p {
     flex: 0 0 100%;
   }
 }
-
-@media (max-width: 1024px) {
-  #patronaci .logos{
-    flex: 0 0 calc(33.333% - 24px);
-  }
-}
-
-@media (max-width: 768px) {
-  #patronaci .logos{
-    flex: 0 0 calc(50% - 24px);
-  }
-}
-
-@media (max-width: 480px) {
-  #patronaci .logos {
-    flex: 0 0 100%;
-  }
-}
-
 
 @media (max-width: 768px) {
 
