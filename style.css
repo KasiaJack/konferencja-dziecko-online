@@ -29,7 +29,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("tlo.png");
+  background-image: url("tlo1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
