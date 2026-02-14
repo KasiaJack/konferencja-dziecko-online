@@ -718,16 +718,22 @@ footer {
 
 .google-form-wrapper {
   max-width: 900px;
-  margin: 0 0 0 120px;
+  margin: 0 0 0 100px;
   padding: 32px;
+}
+
+.google-form-wrapper h2 {
+  text-align: center;
+  margin: 0;
 }
 
 .google-form-wrapper iframe {
   width: 100%;
-  min-height: 1600px;
+  height: 1300px;
   border: none;
   border-radius: 16px;
   background: #ffffff;
+  margin-top: 32px;
 }
 
 .theme-toggle { 
@@ -1564,6 +1570,32 @@ body.dark .about-summary p {
   }
 }
 
+@media (max-width: 768px) {
+
+  #patronaci .logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #patronaci .logos article {
+    width: 90%;
+    max-width: 420px;
+    border-radius: 20px;
+    padding: 26px 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  section[data-page="home"]#patronat-honorowy {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+
+}
 
 @media (max-width: 768px) {
 
