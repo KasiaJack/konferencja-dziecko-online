@@ -1733,25 +1733,17 @@ body.dark .about-summary p {
 @media (max-width: 768px) {
 
   .patrons-logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 28px 18px;
-    max-width: 360px;
-    margin: 30px auto 0;
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    max-width: 280px;
   }
 
   .patrons-logos img {
-    max-height: 56px;
-    width: auto;
-    margin: 0 auto;
-    display: block;
+    max-height: 64px;
   }
 
   .patrons-logos img:nth-child(5) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    max-height: 64px;
+    grid-column: auto;
   }
 
 }
