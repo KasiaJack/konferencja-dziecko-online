@@ -651,11 +651,6 @@ section > h2::after {
   margin: 0 auto;
 }
 
-#patronaci .logos article:nth-child(5) {
-  grid-column: 1 / -1;
-  justify-self: center; 
-  width: 50%;            
-}
 
 #patronaci .logos article img {
   max-width: 280px;   /* było 200 */
@@ -1196,12 +1191,15 @@ section.card {
 
 .patrons-logos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 80px;
   align-items: center;
-
   max-width: 1000px;
   margin: 0 auto;
+}
+.patrons-logos img:nth-child(1),
+.patrons-logos img:nth-child(2) {
+  grid-column: span 2;
 }
 
 .patrons-logos img {
