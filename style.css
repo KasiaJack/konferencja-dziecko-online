@@ -1191,14 +1191,26 @@ section.card {
 
 .patrons-logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 60px 80px;
   align-items: center;
-  max-width: 1000px;
+  max-width: 700px;
   margin: 0 auto;
 }
+
 .patrons-logos img:nth-child(1),
 .patrons-logos img:nth-child(2) {
+  grid-column: span 3;
+}
+
+.patrons-logos img:nth-child(3),
+.patrons-logos img:nth-child(4) {
+  grid-column: span 3;
+}
+
+.patrons-logos img:nth-child(5),
+.patrons-logos img:nth-child(6),
+.patrons-logos img:nth-child(7) {
   grid-column: span 2;
 }
 
