@@ -1210,12 +1210,17 @@ section.card {
 
 .patrons-logos img:nth-child(5),
 .patrons-logos img:nth-child(6),
-.patrons-logos img:nth-child(7) {
-  grid-column: span 2;
+.patrons-logos img:nth-child(7),
+.patrons-logos img:nth-child(8) {
+  grid-column: span 1;
+}
+
+.patrons-logos img:nth-child(5) {
+  grid-column: 2 / span 1;
 }
 
 .patrons-logos img {
-  max-height: 70px;
+  max-height: 60px;
   width: auto;
   max-width: 100%;
   margin: 0 auto;
