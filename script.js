@@ -1,6 +1,7 @@
 //Tryb jasny-ciemny
 
 const toggle = document.getElementById("theme-toggle");
+
 if (toggle) {
   toggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
@@ -77,6 +78,10 @@ allLinks.forEach(link => {
 
     const target = link.dataset.target;
 
+  if (target !== "kontakt") {
+  window.location.hash = target;
+  }
+
     if (target === "kontakt") {
       showPage("home");
       setTimeout(() => {
@@ -96,16 +101,24 @@ allLinks.forEach(link => {
   });
 });
 
-// strona startowa
-showPage("home");
+function loadFromHash() {
+  const page = window.location.hash.replace("#", "") || "home";
+  showPage(page);
+}
+
+window.addEventListener("hashchange", loadFromHash);
+
+loadFromHash();
+
 
 // Formularz 
 
 const form = document.querySelector("form");
 const msg = document.getElementById("form-msg");
 
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+if (form) {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
   const formData = new FormData(form);
 
@@ -131,3 +144,4 @@ form.addEventListener("submit", async function (e) {
     msg.style.color = "red";
   }
 });
+}
