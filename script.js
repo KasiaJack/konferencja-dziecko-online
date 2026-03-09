@@ -68,6 +68,11 @@ function showPage(pageName) {
       section.dataset.page === pageName
     );
   });
+  if (typeof gtag === "function") {
+    gtag('event', 'page_view', {
+      page_path: '/' + pageName
+    });
+  }
 }
 
 const allLinks = document.querySelectorAll('[data-target]');
