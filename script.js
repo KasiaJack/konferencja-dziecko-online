@@ -123,20 +123,20 @@ loadFromHash();
 // Format: { src: 'galeria/foto01.jpg', alt: 'opis' }
 // ====================================================================
 const galleryPhotos = [
-  { src: 'galeria/foto01.jpg', alt: 'Zdjęcie z konferencji 1' },
-  { src: 'galeria/foto02.jpg', alt: 'Zdjęcie z konferencji 2' },
-  { src: 'galeria/foto03.jpg', alt: 'Zdjęcie z konferencji 3' },
-  { src: 'galeria/foto04.jpg', alt: 'Zdjęcie z konferencji 4' },
-  { src: 'galeria/foto05.jpg', alt: 'Zdjęcie z konferencji 5' },
-  { src: 'galeria/foto06.jpg', alt: 'Zdjęcie z konferencji 6' },
-  { src: 'galeria/foto07.jpg', alt: 'Zdjęcie z konferencji 7' },
-  { src: 'galeria/foto08.jpeg', alt: 'Zdjęcie z konferencji 8' },
-  { src: 'galeria/foto09.jpeg', alt: 'Zdjęcie z konferencji 9' },
-  { src: 'galeria/foto10.jpeg', alt: 'Zdjęcie z konferencji 10' },
-  { src: 'galeria/foto11.jpeg', alt: 'Zdjęcie z konferencji 11' },
-  { src: 'galeria/foto12.jpeg', alt: 'Zdjęcie z konferencji 12' },
-  { src: 'galeria/foto13.png', alt: 'Zdjęcie z konferencji 13' },
-  { src: 'galeria/foto14.jpeg', alt: 'Zdjęcie z konferencji 14' },
+  { src: 'foto01.jpg', alt: 'Zdjęcie z konferencji 1' },
+  { src: 'foto02.jpg', alt: 'Zdjęcie z konferencji 2' },
+  { src: 'foto03.jpg', alt: 'Zdjęcie z konferencji 3' },
+  { src: 'foto04.jpg', alt: 'Zdjęcie z konferencji 4' },
+  { src: 'foto05.jpg', alt: 'Zdjęcie z konferencji 5' },
+  { src: 'foto06.jpg', alt: 'Zdjęcie z konferencji 6' },
+  { src: 'foto07.jpg', alt: 'Zdjęcie z konferencji 7' },
+  { src: 'foto08.jpeg', alt: 'Zdjęcie z konferencji 8' },
+  { src: 'foto09.jpeg', alt: 'Zdjęcie z konferencji 9' },
+  { src: 'foto10.jpeg', alt: 'Zdjęcie z konferencji 10' },
+  { src: 'foto11.jpeg', alt: 'Zdjęcie z konferencji 11' },
+  { src: 'foto12.jpeg', alt: 'Zdjęcie z konferencji 12' },
+  { src: 'foto13.png', alt: 'Zdjęcie z konferencji 13' },
+  { src: 'foto14.jpeg', alt: 'Zdjęcie z konferencji 14' },
 ];
 
 (function initGallery() {
