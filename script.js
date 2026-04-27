@@ -137,6 +137,13 @@ const galleryPhotos = [
   { src: 'foto12.jpeg', alt: 'Zdjęcie z konferencji 12' },
   { src: 'foto13.png', alt: 'Zdjęcie z konferencji 13' },
   { src: 'foto14.jpeg', alt: 'Zdjęcie z konferencji 14' },
+  { src: 'foto15.jpg', alt: 'Zdjęcie z konferencji 15' },
+  { src: 'foto16.jpg', alt: 'Zdjęcie z konferencji 16' },
+  { src: 'foto17.jpg', alt: 'Zdjęcie z konferencji 17' },
+  { src: 'foto18.jpg', alt: 'Zdjęcie z konferencji 18' },
+  { src: 'foto19.jpg', alt: 'Zdjęcie z konferencji 19' },
+  { src: 'foto20.jpg', alt: 'Zdjęcie z konferencji 20' },
+  { src: 'foto21.jpg', alt: 'Zdjęcie z konferencji 21' },
 ];
 
 (function initGallery() {
