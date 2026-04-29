@@ -9,8 +9,6 @@ if (toggle) {
 }
 
 
-//Licznik 
-
 const eventDate = new Date("2026-04-17T09:00:00").getTime();
 
 const daysEl = document.getElementById("cd-days");
@@ -95,11 +93,8 @@ allLinks.forEach(link => {
           .scrollIntoView({ behavior: "smooth" });
       }, 100);
     } else {
+      window.scrollTo(0, 0);
       showPage(target);
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
     }
 
     document.body.classList.remove("menu-open");
@@ -109,6 +104,7 @@ allLinks.forEach(link => {
 function loadFromHash() {
   const page = window.location.hash.replace("#", "") || "home";
   showPage(page);
+  window.scrollTo(0, 0);
 }
 
 window.addEventListener("hashchange", loadFromHash);
@@ -116,12 +112,6 @@ window.addEventListener("hashchange", loadFromHash);
 loadFromHash();
 
 
-
-
-// ====================================================================
-// GALERIA ZDJĘĆ — dodaj zdjęcia do tablicy poniżej
-// Format: { src: 'galeria/foto01.jpg', alt: 'opis' }
-// ====================================================================
 const galleryPhotos = [
   { src: 'foto01.jpg', alt: 'Zdjęcie z konferencji 1' },
   { src: 'foto02.jpg', alt: 'Zdjęcie z konferencji 2' },
@@ -228,9 +218,6 @@ const galleryPhotos = [
 })();
 
 
-// ====================================================================
-// COOKIE BANNER (zgoda RODO + Google Analytics Consent Mode)
-// ====================================================================
 (function initCookieBanner() {
   const banner = document.getElementById('cookie-banner');
   const acceptBtn = document.getElementById('cookie-accept');
@@ -268,9 +255,6 @@ const galleryPhotos = [
 })();
 
 
-// ====================================================================
-// BACK TO TOP — przycisk przewijania do góry
-// ====================================================================
 (function initBackToTop() {
   const btn = document.getElementById('back-to-top');
   if (!btn) return;
@@ -295,9 +279,6 @@ const galleryPhotos = [
 })();
 
 
-// ====================================================================
-// SOCIAL SHARE — przyciski udostępniania
-// ====================================================================
 (function initSocialShare() {
   const shareUrl = encodeURIComponent(window.location.origin + window.location.pathname);
   const shareTitle = encodeURIComponent('III Konferencja „Dziecko Online: Wspólna Odpowiedzialność"');
@@ -329,9 +310,6 @@ const galleryPhotos = [
 })();
 
 
-// ====================================================================
-// NEWSLETTER — zapis przez Google Forms (ukryta ramka)
-// ====================================================================
 (function initNewsletter() {
   const form = document.getElementById('newsletter-form');
   const success = document.getElementById('newsletter-success');
